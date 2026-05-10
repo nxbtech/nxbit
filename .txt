@@ -1,0 +1,28 @@
+TO-DO LISTE POUR LE SITE INTERNET NEXABRIDGE
+
+1. **Version mobile du site** : 
+   - Adapter le site pour qu'il soit responsive et parfaitement visible sur mobile et tablette.
+   
+2. **Créer un blog** : 
+   - Mettre en place une section blog pour publier des articles sur la transformation digitale, les tendances IT, le développement web et les projets récents.
+   
+3. **Finir la page "À propos"** :
+   - Ajouter une description complète de Nexabridge, son histoire, ses valeurs, et son objectif en tant que freelance et consultant indépendant.
+   
+4. **Formulaire modal pour proposer un projet** :
+   - Créer un formulaire modal permettant aux visiteurs de proposer un projet directement depuis la page d'accueil ou d'autres pages du site.
+   
+5. **Créer la page "Collaborations"** :
+   - Concevoir une page dédiée aux collaborations avec d'autres entreprises, freelances, ou partenaires potentiels. 
+   - Ajouter des exemples de collaborations passées si possible.
+   
+6. **Créer la page "Projets"** :
+   - Présenter les projets réalisés par Nexabridge dans diverses catégories : transformation digitale, développement web, etc.
+   - Inclure des descriptions de projets passés, des études de cas, et des témoignages de clients.
+   
+7. **Créer la page "FAQ"** :
+   - Rédiger une FAQ avec les questions les plus courantes sur les services de Nexabridge, les tarifs, la façon de travailler, et les types de projets acceptés.
+
+8. **Autres ajustements** :
+   - S'assurer que le design général du site reste cohérent et professionnel sur toutes les pages.
+   - Ajouter les éléments SEO nécessaires (métadonnées, balises alt pour les images, etc.) pour optimiser le référencement.

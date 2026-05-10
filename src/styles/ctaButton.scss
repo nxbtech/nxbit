@@ -38,3 +38,12 @@
     }
   }
 }
+
+@media (max-width: 758px) {
+  .cta-button {
+    &__text {
+      font-size: 12px;
+      padding: 10px;
+    }
+  }
+}

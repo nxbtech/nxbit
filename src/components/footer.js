@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/footer.scss'; // Assure-toi que le fichier CSS est bien configuré
-import NexaLogo from '../images/logo-nxb.png'; // Assure-toi du bon chemin pour l'image
+import NexaLogo from '../components/Images/logo-nxb.png'; // Assure-toi du bon chemin pour l'image
 
 const Footer = () => {
   return (

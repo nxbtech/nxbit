@@ -1,46 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <meta name="theme-color" content="#FF8200" />
+
+    <!-- Description du site pour le SEO -->
+    <meta name="description" content="Nexabridge, expert en développement React et solutions web sur mesure pour entreprises. Découvrez nos services de transformation digitale, gestion de projets IT, et développement web." />
+
+    <!-- Balises Open Graph pour le partage sur les réseaux sociaux -->
+    <meta property="og:title" content="Nexabridge - Expert en développement React et transformation digitale" />
+    <meta property="og:description" content="Nexabridge vous accompagne dans la création d'applications web performantes avec React, et dans la gestion de projets IT pour maximiser votre transformation digitale." />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+    <meta property="og:url" content="https://nexabridge.fr" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nexabridge - Expert en développement React et gestion de projets IT" />
+    <meta name="twitter:description" content="Spécialiste du développement avec React et de la gestion de projets IT, Nexabridge vous offre des solutions digitales sur mesure." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/og-image.png" />
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
+
+    <!-- Police Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Manifest pour PWA -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- Données structurées (schema.org) pour les rich snippets -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Nexabridge",
+        "url": "https://nexabridge.fr",
+        "logo": "https://nexabridge.fr/logo-nxb.png",
+        "sameAs": [
+          "https://www.linkedin.com/company/nexabridge",
+          "https://twitter.com/nexabridge"
+        ],
+        "description": "Nexabridge est une société spécialisée dans le développement web avec React et la gestion de projets IT.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Customer Service",
+          "areaServed": "FR",
+          "availableLanguage": "French"
+        }
+      }
+    </script>
+
+    <!-- Titre de la page pour le SEO et les résultats Google -->
+    <title>Nexabridge - Expert en développement React et transformation digitale</title>
   </head>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>Vous devez activer JavaScript pour utiliser cette application.</noscript>
     <div id="root"></div>
+    
+    <!-- Google Analytics ou autres scripts d'analyse (optionnel) -->
     <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-X"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXX-X');
+      </script>
     -->
   </body>
 </html>

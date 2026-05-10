@@ -1,0 +1,78 @@
+.first-card {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); // 12 colonnes pour aligner avec la grille
+  grid-template-rows: repeat(12, 1fr); // 12 rangées pour un layout plus fluide
+  width: 100%;
+  max-height: 660px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #303030; // Couleur de fond pour fallback si l'image ne charge pas
+  transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.6s ease; // Transition plus lente et douce
+
+  &:hover {
+    transform: scale(1.03); // Zoom léger de la carte au survol
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); // Ombre plus marquée au survol
+  }
+
+  &__image {
+    grid-column: 1 / 13; // L'image occupe toute la largeur (1ère à dernière colonne)
+    grid-row: 1 / 13; // L'image occupe presque toute la hauteur
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.6); // Assombrir l'image
+      z-index: 2;
+      transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1); // Transition plus douce sur l'image également
+
+                  /* Zoom de l'image au survol */
+                  .topCard:hover & {
+                    transform: scale(1.05); // Zoom léger de l'image
+                }
+    }
+  }
+
+  &__h3 {
+    grid-column: 1 / 6; // Le texte prend les trois premières colonnes
+    grid-row: 1 / 2; // Le h3 est positionné en haut sur la première rangée
+    align-self: start;
+    padding: 20px;
+    font-size: 20px;
+    color: var(--orange);
+    font-weight: 400;
+    z-index: 1; // S'assurer qu'il soit visible par-dessus l'image
+  }
+
+  &__text {
+    grid-column: 1 / 13; // Le texte prend 9 colonnes de la grille
+    grid-row: 2 / 7; // Le texte est placé dans la partie médiane
+    padding: 20px;
+    color: white;
+    text-align: left;
+    font-size: 24px;
+    line-height: 1.4;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      font-size: 25px; // Taille plus grande pour les écrans moyens
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 50px; // Taille encore plus grande pour les écrans larges
+    }
+  }
+
+  &__button {
+    grid-column: 2 / 5; // Le bouton est aligné sur les premières colonnes
+    grid-row: 11 / 12; // Positionner le bouton en bas
+    z-index: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .first-card {
+    max-height: 400px;
+  }
+}
+

@@ -1,0 +1,44 @@
+.portfolio-container {
+  padding: 40px;
+  margin: 10px;
+}
+
+.portfolio-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajustement pour les colonnes */
+  grid-gap: 20px; /* Ajout d'un espace entre les lignes et colonnes */
+  justify-content: center; /* Centrage des cartes */
+  margin-top: 20px; /* Espace entre le filtre et les cartes */
+}
+
+.portfolio-card {
+  background-color: #2E2F30; /* Couleur de fond */
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre pour un effet visuel */
+  transition: transform 0.3s ease; /* Animation de survol */
+
+  &:hover {
+    transform: translateY(-5px); /* Légère remontée au survol */
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}

@@ -1,0 +1,28 @@
+.mainCard {
+    max-width: 80%;
+    height: auto;
+    background-color: #2E2F30;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05); /* Scale the card slightly */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add a shadow when hovered */
+    }
+
+    &__title {
+        font-size: 25px;
+        max-width: 40%;
+        padding-left: 30px;
+    }
+
+    &__content {
+        max-width: 40%;
+        margin-right: 10%;
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
-import ContactForm from '../components/contact-form'; // Assure-toi que le chemin est correct
-import ContactImg from '../components/contact-img'; // Assure-toi que le chemin est correct
+import ContactForm from '../components/Contact/ContactForm'; // Assure-toi que le chemin est correct
+import ContactImg from '../components/Contact/ContactImg'; // Assure-toi que le chemin est correct
 import '../styles/contact.scss'; // Si tu as des styles pour la section contact
 
 const Contact = () => {

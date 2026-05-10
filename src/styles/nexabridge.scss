@@ -1,0 +1,21 @@
+.nexabridge-page {
+    display: grid;
+    grid-template-columns: 40% 60%; /* Adjusting the layout to have 40% carousel and 60% image section */
+    grid-gap: 20px;
+    height: 80vh;
+    margin: 2% 5%; /* Add margin around the page */
+}
+
+.nexabridge-page__left {
+    background-color: #ff8200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.nexabridge-page__right {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}

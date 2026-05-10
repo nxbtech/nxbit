@@ -1,0 +1,45 @@
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 20px;
+  
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  
+    &__img {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
+  
+    &__content {
+      padding: 20px;
+  
+      h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+  
+      p {
+        font-size: 16px;
+        color: #666;
+      }
+  
+      span {
+        display: block;
+        margin-top: 15px;
+        font-size: 14px;
+        color: #999;
+      }
+    }
+  }

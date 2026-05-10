@@ -67,3 +67,42 @@
   padding: 0 4px;
   border-radius: 4px;
 }
+
+/* Media queries pour mobile */
+@media (max-width: 768px) {
+  .parallax {
+    flex-direction: row; /* Garde l'image à gauche et le contenu à droite */
+    justify-content: space-around; /* Centrer les éléments dans la grille */
+    align-items: center;
+    height: auto; /* Laisse l'élément ajuster sa hauteur au contenu */
+    margin-bottom: 40px; /* Espacement entre les sections */
+  }
+
+  .parallax-image {
+    width: 40%; /* L'image reste à gauche mais sa taille est réduite */
+    height: 250px; /* Hauteur réduite pour mobile */
+    margin-left: 0; /* Centre l'image */
+    background-attachment: scroll; /* Désactive le parallax sur mobile */
+  }
+
+  .parallax-content {
+    width: 55%; /* Le texte prend plus de place à droite */
+    padding: 20px; /* Réduit l'espace intérieur */
+    text-align: left; /* Maintient le texte aligné à gauche */
+    height: auto; /* Ajuste la hauteur */
+  }
+
+  .parallax-number {
+    font-size: 32px; /* Réduit la taille du numéro */
+  }
+
+  .parallax-content h2 {
+    font-size: 28px; /* Réduit la taille du titre */
+    font-weight: 500;
+  }
+
+  .parallax-content p {
+    margin-top: 0;
+    font-size: 18px; /* Réduit la taille du texte */
+  }
+}

@@ -5,6 +5,8 @@ body {
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
+    max-width: 1440px;
+    margin: auto;
 }
 
 // Appliquer la marge globale à l'ensemble du contenu
@@ -16,4 +18,36 @@ main {
 .navbar, .footer {
     margin: 0; // Pas de marge pour ces éléments
     padding: 0 20px; // Si tu veux ajuster l'espacement interne pour la navbar et le footer
+}
+
+.fade-enter {
+    opacity: 0;
+    transform: scale(0.95); /* Ajout d'un léger zoom au début */
+  }
+  .fade-enter-active {
+    opacity: 1;
+    transform: scale(1); /* Remet à sa taille normale */
+    transition: opacity 300ms, transform 300ms;
+  }
+  .fade-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .fade-exit-active {
+    opacity: 0;
+    transform: scale(0.95); /* Zoom arrière à la fin */
+    transition: opacity 300ms, transform 300ms;
+  }
+
+  /* global.scss ou navbar.scss */
+html {
+  scroll-behavior: smooth;
+}
+
+  
+@media (max-width: 758px) {
+  main {
+    margin: 20px;
+    overflow: hidden;
+  }
 }

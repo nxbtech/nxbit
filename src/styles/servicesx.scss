@@ -1,0 +1,37 @@
+.combinedComponent {
+    height: 100vh;
+    max-width: 95%;
+    margin: auto;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+
+    &__content {
+        grid-column: 1 / -1; // Positions the service content on the left
+        grid-row: 1 / 4; // Takes up the top 3 rows
+    }
+
+    &__serviceImg {
+        margin-top: 20px;
+        grid-column: 4 / 13; // Positions the image on the right
+        grid-row: 1 / 4 ; // Matches the height of the content
+    }
+
+    &__mainCard {
+        grid-column: 1 / 13; // Spans across all 12 columns
+        grid-row: 4 / 4; // Positioned below content and image
+    }
+
+    &__secondCard {
+        grid-row: 5 / 5; // Positioned below the main card
+        &--orange {
+            grid-column: 2 / 7; // First second card spans half the grid
+        }
+
+        &--violet {
+            grid-column: 7 / 12; // Second second card spans the other half
+        }
+    }
+}

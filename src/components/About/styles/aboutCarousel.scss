@@ -1,0 +1,47 @@
+/* nexabridgeCarousel.scss */
+
+.nexabridge-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background-color: #ff8200;
+    border-radius: 20px;
+}
+
+.nexabridge-carousel__content {
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 20px;
+
+    h2 {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 50px;
+        color: white;
+    }
+    
+    p {
+        font-size: 18px;
+        margin-bottom: 50px;
+        color: white;
+    }
+}
+
+
+/* Progress bar with increased height */
+.nexabridge-carousel__progress {
+    width: 80%;
+    height: 5px; /* Increased the height from 5px to 10px */
+    background-color: #ffba71;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto; /* Center the progress bar */
+    margin-bottom: 15%;
+}
+
+.nexabridge-carousel__progress-line {
+    height: 100%;
+    background-color: white; /* Change to white to match Nexabridge theme */
+    transition: width 0.3s ease;
+}

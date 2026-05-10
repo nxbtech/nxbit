@@ -1,0 +1,61 @@
+.portfolio-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 0;
+  
+    &__categories {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    &__sort {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-left: 40px;
+    }
+  
+    button {
+      background-color: transparent;
+      border: 1px solid #FF8200;
+      color: #FF8200;
+      border-radius: 20px;
+      padding: 8px 15px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #FF8200;
+        color: white;
+      }
+  
+      &.active {
+        background-color: #FF8200;
+        color: white;
+      }
+    }
+  
+    .sort-btn {
+      background-color: transparent;
+      border: 1px solid #9372FF;
+      color: #9372FF;
+      border-radius: 20px;
+      padding: 8px 15px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #9372FF;
+        color: white;
+      }
+    }
+  }

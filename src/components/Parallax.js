@@ -5,24 +5,24 @@ const Parallax = () => {
   const imageData = [
     { 
       id: 1, 
-      src: '/images/img-nxb1.png', 
+      src: require('../components/Images/parallax.png'), 
       number: '1.', 
-      title: 'FLEXIBILITE TOTALE', 
-      text: <>On <span className="highlight">s’adapte</span> à vos besoins, à vos délais, et à votre manière de travailler, en full remote.</>
+      title: 'FLEXIBILITÉ ET AGILITÉ', 
+      text: <>Nous <span className="highlight">nous adaptons</span> à vos besoins et délais, tout en travaillant à distance pour plus de réactivité.</>
     },
     { 
       id: 2, 
-      src: '/images/img-nxb8.png', 
+      src: require('../components/Images/parllax.png'), 
       number: '2.', 
-      title: 'EXECUTION PRECISE', 
-      text: <>Des conseils <span className="highlight">stratégiques</span> adaptés à vos enjeux digitaux.</>
+      title: 'EXPERTISE TECHNIQUE', 
+      text: <>Des solutions en <span className="highlight">développement web</span> et gestion de projet pour optimiser vos projets digitaux.</>
     },
     { 
       id: 3, 
-      src: '/images/nxp-img6.png', 
+      src: require('../components/Images/3D.jpg'), 
       number: '3.', 
       title: 'PARTENAIRE DE CONFIANCE', 
-      text: <>Nous vous <span className="highlight">accompagnons</span> dans chaque étape de votre transition digitale.</>
+      text: <>Nous vous <span className="highlight">accompagnons</span> à chaque étape de votre transformation numérique avec des solutions sur mesure.</>
     }
   ];
 

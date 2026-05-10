@@ -1,0 +1,51 @@
+/* nexabridgeRight.scss */
+
+.nexabridge-page__right {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Ensure the container takes the full height */
+}
+
+.nexabridge-page__image-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.nexabridge-page__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    border-radius: 10px;
+}
+
+.nexabridge-page__cards {
+    position: absolute;
+    bottom: 10%; /* Adjust position of the cards */
+    left: 5%; /* Adjust spacing */
+    display: flex;
+    flex-direction: column; /* Stack the cards vertically */
+    align-items: flex-start;
+    gap: 20px; /* Add space between the cards */
+}
+
+.nexabridge-page__card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 250px; /* Wider cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    text-align: left; /* Left-align the content */
+}
+
+.nexabridge-page__card h4 {
+    font-size: 24px;
+    color: #ff8200;
+}
+
+.nexabridge-page__card p {
+    font-size: 14px;
+    color: #333;
+}
